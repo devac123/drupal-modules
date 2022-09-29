@@ -1,0 +1,4 @@
+name: Custom Api
+description: Example api of different methods
+type: module
+core_version_requirement: ^8 || ^9

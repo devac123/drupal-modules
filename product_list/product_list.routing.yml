@@ -1,0 +1,23 @@
+# pass optional parameter in url
+# https://drupal.stackexchange.com/questions/123355/how-to-define-an-optional-argument-to-route-callback
+
+product_list.getProducts:
+  path: '/product/list/{id}'
+  defaults: 
+    _controller: '\Drupal\product_list\Controller\ProductListController::getProducts'
+    _title: 'Product List'
+    id: ''
+  requirements:
+    _permission: 'access content' 
+
+
+product_list.Cservice:
+  path: '/custom-service'
+  defaults: 
+    _title: 'Custom Service'
+    _controller: '\Drupal\product_list\Controller\ProductListController::Cservice'
+  requirements:
+    _permission: 'access content' 
+
+
+

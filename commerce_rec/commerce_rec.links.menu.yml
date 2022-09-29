@@ -1,0 +1,16 @@
+
+# children rout of commerce configuration 
+commerce_rec.configuration:
+  title: 'Commerce Rec'
+  route_name: 'commerce_rec.configuration'
+  parent: 'commerce.configuration'
+  weight: 10
+
+# children rout of commerce rec
+commerce_rec.addProduct:
+  title: 'Roles And variations'
+  route_name: 'commerce_rec.addProduct'
+  parent: 'commerce_rec.configuration'
+  description: 'Sets Configuration Form Example'
+  weight: 100  
+

@@ -1,0 +1,8 @@
+entity.commerce_custom_entity.add_form:
+  route_name: entity.commerce_custom_entity.add_form
+  title: 'Add Commerce Entity'
+  appears_on:
+    - entity.commerce_custom_entity.collection
+  options:
+    query: 
+      destination: admin/content/commerce_custom_entity

@@ -1,0 +1,7 @@
+services:
+ custom_services.say_hello:
+   class: Drupal\custom_services\HelloServices
+ custom_services.block_create:
+   class: Drupal\custom_services\BlockCreateService
+#  custom_services.block_create:
+#    class: Drupal\custom_services\HelloServices

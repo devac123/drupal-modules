@@ -1,0 +1,5 @@
+# https://opensenselabs.com/blog/tech/twig-extension-drupal
+name: Custom Twig Extention
+description: This is my first Twig Extention
+type: module
+core_version_requirement: ^8 || ^9 

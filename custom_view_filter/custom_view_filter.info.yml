@@ -1,0 +1,4 @@
+name: Custom View Filter
+description: This Filter are shown in views
+type: module
+core_version_requirement: ^8 || ^9

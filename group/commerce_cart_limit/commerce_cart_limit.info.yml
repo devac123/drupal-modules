@@ -1,0 +1,6 @@
+name: Commerce cart limit
+type: module
+description: Custom updates for commerce cart.
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9

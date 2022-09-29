@@ -1,0 +1,7 @@
+data_insertion.create_product:
+  path: '/path/create-product'
+  defaults:
+    _controller: '\Drupal\data_insertion\Controller\Product::create'
+    _title: 'Create Products'
+  requirements: 
+    _permission: 'access content'

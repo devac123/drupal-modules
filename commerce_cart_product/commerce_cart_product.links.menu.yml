@@ -1,0 +1,16 @@
+
+# children rout of commerce configuration 
+commerce_custom_entity.configuration:
+  title: 'Commerce Cart '
+  route_name: 'commerce_cart_limit.configuration'
+  parent: 'commerce.configuration'
+  weight: 10
+
+
+commerce_custom_entity.cart_limit:
+  title: 'Commerce Cart Limit'
+  route_name: 'commerce_cart_limit.form_autocomplete'
+  parent: 'commerce_custom_entity.configuration'
+  description: 'Sets Configuration Form Example'
+  weight: 100  
+

@@ -1,0 +1,4 @@
+name: Product List
+description: Show All The Product
+type: module
+core_version_requirement: ^8 || ^9

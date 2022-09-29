@@ -1,0 +1,13 @@
+<?php
+
+function product_list_theme(){
+    return array(
+       "product_list" => array(
+           'variables' =>  array
+            (
+               "params" => [],
+               "title" =>   "this is title comming from sample_api dot module file",
+            )
+        )
+    );
+}

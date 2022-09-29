@@ -1,0 +1,14 @@
+<?php
+function testing_blck_theme($existing,$theme,$type,$path)
+{
+    return [
+        'custom-block' => [
+        'variables' =>[
+            'data' => [],
+            'title' =>'',
+            ],
+        ],
+    ];
+}
+
+?>

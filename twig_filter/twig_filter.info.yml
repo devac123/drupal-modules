@@ -1,0 +1,6 @@
+name: Twig Filter
+description: My First Twig filter
+type: module
+core_version_requirement: ^8 || ^9
+
+# https://web4pro.net/blog-news/custom-twig-filter/

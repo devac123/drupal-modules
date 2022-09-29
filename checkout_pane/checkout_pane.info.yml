@@ -1,0 +1,5 @@
+name: checkout Pane
+description: create a custom checkout pane 
+type: module
+core_version_requirement: ^8 || ^9
+package: Custom

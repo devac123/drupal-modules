@@ -1,0 +1,7 @@
+checkout_pane.render:
+  path: '/node_activity'
+  defaults:
+    _controller: '\Drupal\checkout_pane\Controller\NodeController::node_activity'
+    title: 'Node Activity'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,17 @@
+<?php
+
+function custom_view_filter_views_data_alter(array &$data)
+{
+    \Drupal::logger('my_module')->notice(json_encode($data));
+    $data['node']['custom_filter'] = [
+        'title' => t('Custom filter'),
+        'filter' => [
+          'title' => t('custom filter'),
+          'help' => t('Provides a custom filter for project nodes by their custom filteration.'),
+          'field' => 'field_title',
+          'id' => 'test_filter',
+        ],
+      ];
+    
+}
+

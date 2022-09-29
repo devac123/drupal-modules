@@ -1,0 +1,60 @@
+<?php
+
+/**
+ * @file
+ * Install, update, and uninstall functions for the Search module.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+
+function student_registration_schema() {
+  $schema['search_data'] = [
+    'description' => 'User Search History',
+      'fields' => [
+        'uid' => [
+          'description' => 'The {users}.uid this record affects.',
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => TRUE,
+          'default' => 0,
+        ],
+        'name' => [
+          'description' => 'The identifier of the data.',
+          'type' => 'varchar',
+          'length' => 128,
+          'not null' => TRUE,
+          'default' => '',
+        ],
+        'current_path' => [
+          'description' => 'The Current Page Path.',
+          'type' => 'varchar',
+          'length' => 128,
+          'not null' => TRUE,
+          'default' => '',
+        ],
+        'search_data' => [
+          'description' => 'Search Data.',
+          'size' => 'big',
+          'type' => 'blob',
+          'not null' => TRUE,
+        ],
+        ],
+        // 'primary key' => ['uid', 'name', 'current_path', 'search_data'],
+      ];
+      return $schema;
+}
+
+function student_registration_uninstall() {
+  // Delete remaining general module variables.
+  // \Drupal::state()->delete('search_data');
+  \Drupal::database()->schema()->dropTable('search_data');
+}
+
+/**
+ * Implements hook_update_last_removed().
+ */
+function student_registration_update_last_removed() {
+  return 8700;
+}

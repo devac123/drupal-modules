@@ -1,0 +1,18 @@
+commerce_cart_limit.configuration:
+  path: '/admin/commerce/config/commerce_cart_limit'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Commerce Cart Limit'
+  requirements:
+    _permission: 'access commerce administration pages'
+
+
+commerce_cart_limit.form_autocomplete:
+  path: '/product/cart-form'
+  defaults:
+    _form:  '\Drupal\commerce_cart_limit\Form\CommerceCartLimtForm'
+    _title: 'Product Cart Limt'
+  requirements:
+    _permission: 'administer site configuration'
+  options:  
+    _admin_route: TRUE      

@@ -1,0 +1,7 @@
+name: Commerce Cart Product 
+description: 'This is Commerce Product custom Entity module'
+package: Custom
+type: module
+core_version_requirement: ^8 || ^9
+configure: commerce_cart_product.settings
+

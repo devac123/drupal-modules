@@ -1,0 +1,27 @@
+student_registration.term:
+  path: '/Term-form'
+  defaults:
+    _title: 'Candidate Form'
+    _form: 'Drupal\student_registration\Form\RegistrationForm'
+  requirements:
+    _permission: 'access content' 
+
+example.content:
+  path: '/example/{$node}' 
+  defaults: 
+    _controller: '\Drupal\student_registration\Form\ExampleController::currentNodeId' 
+    _title: 'Hello World'
+  options:
+    parameters:
+      node:
+        type: 'entity:node'        
+  requirements: 
+    _permission: 'access content' 
+
+student_registration.search_data:
+  path: '/search_data'
+  defaults:
+    _title: 'Search Data'
+    _controller: 'Drupal\student_registration\Controller\SearchController::insertCustom'
+  requirements:
+    _permission: 'access content'     

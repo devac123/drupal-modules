@@ -1,0 +1,5 @@
+services:
+  custom_workingcouple.event_subscriber:
+    class: Drupal\custom_workingcouple\EventSubscriber\CartEventSubscriber
+    tags:
+      - { name: event_subscriber }

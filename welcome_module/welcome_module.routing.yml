@@ -1,0 +1,8 @@
+welcome_module:
+  path: '/welcome/page'
+  defaults:
+    _controller: '\Drupal\welcome_module\Controller\WelcomeController::welcome'
+    _title: 'Learning Drupal Custom Module creation'
+  requirements:
+     _permission: 'access content admin'
+     

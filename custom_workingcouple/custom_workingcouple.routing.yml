@@ -1,0 +1,15 @@
+custom_workingcouple.content:
+  path: '/customcall-api' 
+  defaults: 
+    _controller: '\Drupal\custom_workingcouple\Controller\' 
+    _title: 'API'
+  requirements: 
+    _permission: 'access content' 
+
+custom_workingcouple.form:
+  path: '/cart-form' 
+  defaults: 
+    _form: '\Drupal\custom_workingcouple\Form\CartForm' 
+    _title: 'Cart Form'
+  requirements: 
+    _permission: 'access content' 

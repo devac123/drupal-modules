@@ -1,0 +1,5 @@
+name: Data Insertion
+type: module
+description: 'First Custom Drupal 9 Module.'
+package: Custom
+core_version_requirement: ^8 || ^9

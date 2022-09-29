@@ -1,0 +1,24 @@
+<?php
+
+/* 1-> put refers a twig file name */
+/* 2-> variables is a canstant variable it cant be change
+    'variables' =>  array( )
+*/
+ // 3-> $exist,$theme,$type,$path
+
+ /* 4-> param used as a parameter wich is defined in a controller file 
+    "params" => [],
+ */
+
+
+function sample_api_theme(){
+    return array(
+       "put" => array(
+           'variables' =>  array(
+               "params" => [],
+               "title" =>   "this is title comming from sample_api dot module fiel",
+               
+           )
+       )
+    );
+}

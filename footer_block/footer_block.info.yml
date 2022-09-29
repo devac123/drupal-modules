@@ -1,0 +1,7 @@
+name: Footer Custom Block
+description: Custom block Module
+type: module
+core_version_requirement: ^8 || ^9
+dependencies:
+  
+  - block

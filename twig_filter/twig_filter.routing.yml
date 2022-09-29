@@ -1,0 +1,7 @@
+twig_filter.firstfilter:
+  path: '/twig-filter'
+  defaults: 
+    _controller: '\Drupal\twig_filter\Controller\TwigFilterController::firstfilter'
+    _title: 'Custom Filter'
+  requirements:
+    _permission: 'access content' 

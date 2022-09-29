@@ -1,0 +1,5 @@
+
+name: Custom activity
+description: ENtity Info
+type: entity type
+core_version_requirement: ^8 || ^9

@@ -1,0 +1,13 @@
+<?php
+
+function twig_filter_theme(){
+    return array(
+       'twig_filter_test_page' => array(
+           'variables' =>  array
+            (
+               "params" => [],
+               "title" =>   "this is title comming from sample_api dot module file",
+            )
+        )
+    );
+}

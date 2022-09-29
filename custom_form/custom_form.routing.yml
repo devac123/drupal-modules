@@ -1,0 +1,32 @@
+custom_form.addUser:
+  path: '/custom-form'
+  defaults:
+    _title: 'Custom form'
+    _form: '\Drupal\custom_form\Form\Test_Form'
+  requirements:
+     _permission: 'access content'
+
+custom_form.register:
+  path: '/normal-form'
+  defaults:
+    _title: 'Normal form'
+    _form: '\Drupal\custom_form\Form\Normal_Form'
+  requirements:
+     _permission: 'access content'
+
+
+custom_form.term:
+  path: '/Term-form'
+  defaults:
+    _title: 'Term form'
+    _form: '\Drupal\custom_form\Form\Create_term'
+  requirements:
+    _permission: 'access content'
+
+custom_form.media:
+  path: '/media-form'
+  defaults:
+    _title: 'Media form'
+    _form: '\Drupal\custom_form\Form\mediaform'
+  requirements:
+    _permission: 'access content'

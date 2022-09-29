@@ -1,0 +1,4 @@
+name: example_rest
+dedcription: example_rest Module desc
+type: module
+core_version_requirement: ^8 || ^9

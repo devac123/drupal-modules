@@ -1,0 +1,28 @@
+sample_api.put:
+  path: '/my-api/put'
+  defaults: { _controller: '\Drupal\sample_api\Controller\SampleApiController::put_example' }
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
+          
+sample_api.get:
+  path: '/my-api/get.Json'
+  defaults: { _controller: '\Drupal\sample_api\Controller\SampleApiController::get_example' }
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
+
+
+sample_api.post:
+  path: '/my-api/post'
+  defaults: { _controller: '\Drupal\sample_api\Controller\SampleApiController::post_example' }
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
+
+sample_api.delete:
+  path: '/my-api/delete'
+  defaults: { _controller: '\Drupal\sample_api\Controller\SampleApiController::delete_example' }
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'

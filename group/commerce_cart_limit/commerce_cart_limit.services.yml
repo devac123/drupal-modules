@@ -1,0 +1,5 @@
+services:
+  commerce_cart_limit.event_subscriber:
+    class: Drupal\commerce_cart_limit\EventSubscriber\CommerceCartLimitSubscriber
+    tags:
+      - { name: event_subscriber }

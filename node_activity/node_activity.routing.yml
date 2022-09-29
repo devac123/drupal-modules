@@ -1,0 +1,10 @@
+node_activity.render:
+  # The path always starts with a leading forward-slash.
+  path: '/node_activity'
+  # Defines the default properties of a route.
+  defaults:
+    # For page callbacks that return a render array use _controller.
+    _controller: '\Drupal\node_activity\Controller\NodeController::node_activity'
+  # Require a permission to access this route.
+  requirements:
+    _permission: 'access content'

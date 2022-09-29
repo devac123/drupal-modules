@@ -1,0 +1,22 @@
+add Commerce Email Messages entities:
+  title: 'Create new Commerce Email Messages entities'
+
+administer Commerce Email Messages entities:
+  title: 'Administer Commerce Email Messages entities'
+  description: 'Allow to access the administration form to configure Commerce Email Messages entities.'
+  restrict access: true
+
+delete Commerce Messages entities:
+  title: 'Delete Commerce Messages entities'
+
+edit Commerce Messages entities:
+  title: 'Edit Commerce Messages entities'
+
+view published Commerce Messages entities:
+  title: 'View published Commerce Messages entities'
+
+view unpublished Commerce Messages entities:
+  title: 'View unpublished Commerce Messages entities'
+
+view own Commerce Messages entities:
+  title: 'View own Commerce Messages entities'

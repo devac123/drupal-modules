@@ -1,0 +1,5 @@
+name: Commerce order place event subscriber
+description: A commerce module for event on order place
+type: module
+package: custom
+core_version_requirement: ^8 || ^9

@@ -1,0 +1,6 @@
+services:
+  commerce_rec.order_complete:
+    class: Drupal\commerce_rec\EventSubscriber\OrderCompleteSubscriber
+    arguments: ['@entity_type.manager']
+    tags:
+      - { name: event_subscriber }

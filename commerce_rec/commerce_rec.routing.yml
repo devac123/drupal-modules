@@ -1,0 +1,27 @@
+commerce_rec.configuration:
+  path: '/admin/commerce/config/commerce_rec'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'commerce_rec'
+  requirements:
+    _permission: 'access commerce administration pages'
+  
+
+commerce_rec.addProduct:
+  path: '/admin/commerce/config/product-var'
+  defaults:
+    _title: 'Custom Configuration'
+    _form: '\Drupal\commerce_rec\Form\RoleAssignForm'
+  requirements:
+     _permission: 'administer site configuration'
+  options:  
+    _admin_route: TRUE    
+
+commerce_rec.delete_group:
+  path: '/delete/group/{id}'
+  defaults:
+    _controller: '\Drupal\commerce_rec\Controller\TestController::deleteGroup'
+    _title: 'Delete Traing Group'
+  requirements:
+    _permission: 'access content'
+

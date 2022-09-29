@@ -1,0 +1,5 @@
+services:
+  twig_filter.my_custom_twig_items:
+    class: Drupal\twig_filter\MyCustomTwigItems
+    tags:
+    - { name: twig.extension }

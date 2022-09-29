@@ -1,0 +1,6 @@
+student_registration.admin:
+  title: 'Form'
+  description: 'example of how to make an admin settings page link'
+  parent: system.admin
+  route_name: student_registration.term
+  weight: 10
