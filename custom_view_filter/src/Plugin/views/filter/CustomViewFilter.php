@@ -43,20 +43,20 @@ class CustomViewFilter extends ManyToOne {
     /**
      * Helper function that builds the query.
      */
-//     public function query() {
-//     if (!empty($this->value)) {
-//       $configuration = [
-//         'table' => 'node__field_phase',
-//         'field' => 'entity_id',
-//         'left_table' => 'node_field_data',
-//         'left_field' => 'nid',
-//         'operator' => '=',
-//       ];
-//       $join = Views::pluginManager('join')->createInstance('standard', $configuration);
-//       $this->query->addRelationship('node__field_phase', $join, 'node_field_data');
-//       $this->query->addWhere('AND', 'node__field_phase.field_phase_value', $this->value, 'IN');
-//     }
-//   }
+    public function query() {
+    if (!empty($this->value)) {
+      $configuration = [
+        'table' => 'node__field_phase',
+        'field' => 'entity_id',
+        'left_table' => 'node_field_data',
+        'left_field' => 'nid',
+        'operator' => '=',
+      ];
+      $join = Views::pluginManager('join')->createInstance('standard', $configuration);
+      $this->query->addRelationship('node__field_phase', $join, 'node_field_data');
+      $this->query->addWhere('AND', 'node__field_phase.field_phase_value', $this->value, 'IN');
+    }
+  }
    
 }
 
