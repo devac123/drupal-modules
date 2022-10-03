@@ -1,4 +1,5 @@
 <?php
+use Symfony\Component\HttpFoundation\RedirectResponse;
 
 function product_list_theme(){
     return array(
@@ -10,4 +11,25 @@ function product_list_theme(){
             )
         )
     );
+
+
 }
+// function product_list_preprocess_page(&$variables) {
+//     $user = \Drupal::currentUser()->isAnonymous();
+//     $path = \Drupal::service('path.matcher')->isFrontPage();
+//     if($path && $user){
+//         $response = new RedirectResponse("/home");
+//         $response->send();
+//     }
+// }
+
+
+
+// function opigno_custom_updates_preprocess_page(&$variables) {
+//     $user = \Drupal::currentUser()->isAnonymous();
+//     $path = \Drupal::service('path.matcher')->isFrontPage();
+//     if($path && $use){
+//         $response = new RedirectResponse("/home");
+//         $response->send();
+//     }
+// }

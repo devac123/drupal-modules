@@ -1,0 +1,21 @@
+<?php
+
+function frontpage_preprocess(&$variables, $hook)
+{
+    $user = \Drupal::currentUser()->isAnonymous();
+    $path = \Drupal::service('path.matcher')->isFrontPage();
+    if ($user and $path) {
+        // dd("any");
+        \Drupal::configFactory()
+        ->getEditable('system.site')
+        ->set('page.front', '/home')
+        ->save();
+    }
+    else{
+        // dd("auth");
+        \Drupal::configFactory()
+        ->getEditable('system.site')
+        ->set('page.front', '/node')
+        ->save();
+    }
+}

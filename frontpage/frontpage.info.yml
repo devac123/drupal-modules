@@ -1,0 +1,4 @@
+name: Front Page
+description: Set Front Page according to the role
+type: module
+core_version_requirement: ^8 || ^9

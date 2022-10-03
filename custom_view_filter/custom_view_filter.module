@@ -2,7 +2,7 @@
 
 function custom_view_filter_views_data_alter(array &$data)
 {
-    \Drupal::logger('my_module')->notice(json_encode($data));
+    // filter creteria
     $data['node']['custom_filter'] = [
         'title' => t('Custom filter'),
         'filter' => [
@@ -12,6 +12,38 @@ function custom_view_filter_views_data_alter(array &$data)
           'id' => 'test_filter',
         ],
       ];
+      
+      // product contectual Filter
+      $data['node_field_data']['term_product_tid_depth'] = [
+        'help' => t('Display products if it has the selected taxonomy terms, or children of the selected terms.'),
+        'real field' => 'product_id',
+        'argument' => [
+          'title' => t('Product has taxonomy term ID (Custom contextual Filter)'),
+          'id' => 'taxonomy_index_tid_product_depth',
+          'accept depth modifier' => FALSE,
+        ],
+        'filter' => [
+          'title' => t('Product has taxonomy term ID (with depth)'),
+          'id' => 'taxonomy_index_tid_product_depth',
+        ]
+      ];
+     
+      // |node_field_data = db_table|
+      // node contextual filter
+      $data['node_field_data']['term_product_tid_depth'] = [
+        'help' => t('Display products if it has the selected taxonomy terms, or children of the selected terms.'),
+        'real field' => 'nid',
+        'argument' => [
+          'title' => t('Node has taxonomy term name (Custom contextual Filter)'),
+          'id' => 'node_taxonomy_name',
+          'accept depth modifier' => FALSE,
+        ],
+        // 'filter' => [
+        //   'title' => t('Node has taxonomy term ID (with depth)'),
+        //   'id' => 'node_taxonomy_name',
+        // ]
+      ];
+    
     
 }
 
