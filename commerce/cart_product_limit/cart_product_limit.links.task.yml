@@ -1,0 +1,21 @@
+# Ph transaction routing definition
+cart_product_limit.settings_tab:
+  route_name: cart_product_limit.settings
+  title: 'Settings'
+  base_route: cart_product_limit.settings
+
+# entity.product_cart_limit_entity.canonical:
+#   route_name: entity.product_cart_limit_entity.canonical
+#   base_route: entity.product_cart_limit_entity.canonical
+#   title: 'View'
+
+# entity.ph_transaction.edit_form:
+#   route_name: entity.ph_transaction.edit_form
+#   base_route: entity.ph_transaction.canonical
+#   title: 'Edit'
+
+# entity.product_cart_limit_entity.delete_form:
+#   route_name:  entity.product_cart_limit_entity.delete
+#   base_route:  entity.product_cart_limit_entity.delete
+#   title: Delete
+#   weight: 10

@@ -1,0 +1,5 @@
+name: Cart Product Limit Data
+description: 'This is Commerce Product custom Entity module'
+package: Custom
+type: module
+core_version_requirement: ^8 || ^9

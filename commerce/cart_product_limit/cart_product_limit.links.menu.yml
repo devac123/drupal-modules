@@ -1,0 +1,7 @@
+cart_product_limit.admin:
+  title: 'Product Cart Limit'
+  description: 'Set the product card limit'
+  # parent: system.admin_config_development
+  route_name: cart_product_limit.list
+  parent: commerce.admin_commerce
+  weight: 100

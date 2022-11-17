@@ -32,6 +32,7 @@ class ContextualFilterHandler extends IndexTid {
       dd($ter);
       // $titles[] = \Drupal::service('entity.repository')->getTranslationFromContext($term)->label();
     }
+    
     return $titles;
   }
 }

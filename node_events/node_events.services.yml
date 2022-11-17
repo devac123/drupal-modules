@@ -1,0 +1,6 @@
+services:
+  orderplace.order_complete:
+    class: Drupal\node_events\EventSubscriber\NodeEvents
+    arguments: ['@entity_type.manager']
+    tags:
+      - { name: event_subscriber }

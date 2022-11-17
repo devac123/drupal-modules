@@ -1,0 +1,8 @@
+cart_product_limit.add_form:
+  route_name: cart_product_limit.add
+  title: 'Add Product limit'
+  appears_on:
+    - cart_product_limit.list
+  options:
+    query: 
+      destination: admin/content/cart_product_limit/add

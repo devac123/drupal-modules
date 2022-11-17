@@ -1,0 +1,13 @@
+<?php
+use Symfony\Component\HttpFoundation\RedirectResponse;
+
+function opigno_custom_updates_preprocess_page(&$variables) {
+    $user = \Drupal::currentUser()->isAnonymous();
+    $path = \Drupal::service('path.matcher')->isFrontPage();
+    if($path && $use){
+        $response = new RedirectResponse("/home");
+        $response->send();
+    }
+}
+https://dev-opigno-site.pantheonsite.io/admin/appearance/settings/aristotle
+

@@ -1,0 +1,39 @@
+cart_product_limit.add:
+  path: 'admin/content/cart_product_limit/add'
+  defaults:
+    _form: '\Drupal\cart_product_limit\Form\CommerceCartProductLimitForm'
+    _title: 'Add Cart Product Limit'
+  requirements:
+    _permission: 'access content'
+
+cart_product_limit.update:
+  path: 'admin/content/cart_product_limit/{id}/{product_variation}/update'
+  defaults:
+    _form: '\Drupal\cart_product_limit\Form\UpdateCommerceCartProductLimtForm'
+    _title: 'Update Cart Product Limit'
+  requirements:
+    _permission: 'access content'
+
+cart_product_limit.delete:
+  path: 'admin/content/cart_product_limit/{id}/delete'
+  defaults:
+    _controller: '\Drupal\cart_product_limit\Controller\CartProductLimitEntityController::test'
+    _title: 'Product Delete'
+  requirements:
+    _permission: 'access content'
+
+cart_product_limit.list:
+  path: 'admin/content/cart_product_limit/list'
+  defaults:
+    _controller: '\Drupal\cart_product_limit\Controller\CartProductLimitRouter::build'
+    _title: 'Product Details'
+  requirements:
+    _permission: 'access content'
+
+cart_product_limit.settings:
+  path: 'admin/content/cart_product_limit/settings'
+  defaults:
+    _form: '\Drupal\cart_product_limit\Form\CartProductLimitSettingsForm'
+    _title: 'Product Details'
+  requirements:
+    _permission: 'access content'
